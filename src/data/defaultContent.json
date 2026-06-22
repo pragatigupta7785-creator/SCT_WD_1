@@ -1,0 +1,47 @@
+{
+  "siteTitle": "DevFlow Studio",
+  "navLinks": [
+    { "label": "Home", "path": "/" },
+    { "label": "About", "path": "/about" },
+    { "label": "Services", "path": "/services" },
+    { "label": "Contact", "path": "/contact" }
+  ],
+  "hero": {
+    "title": "We build modern digital experiences.",
+    "subtitle": "Simple, elegant, and high-performing websites tailored for your business. Designed for human interaction, not AI templates.",
+    "ctaText": "Get Started",
+    "ctaLink": "/contact"
+  },
+  "about": {
+    "title": "Our Philosophy",
+    "subtitle": "We believe in clean code, visual clarity, and responsive design.",
+    "content": "Founded by a team of dedicated developers, we value software craft. We believe every pixel should serve a purpose, and every line of code should be performant. By avoiding flashy trends, we focus on what really matters: fast page loads, readable typography, and intuitive user experiences that work seamlessly across every screen."
+  },
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Application Development",
+      "description": "High-performance Single Page Applications (SPAs) built with React, Vite, and clean modular structures.",
+      "iconName": "Laptop"
+    },
+    {
+      "id": 2,
+      "title": "Responsive Layout Design",
+      "description": "We ensure your site looks spectacular and functions flawlessly on mobile, tablet, and ultra-wide desktops.",
+      "iconName": "Smartphone"
+    },
+    {
+      "id": 3,
+      "title": "Search Engine Optimization",
+      "description": "Semantic HTML, structured metadata schema, and lightning-fast loading speeds to help you rank on search engines.",
+      "iconName": "Search"
+    }
+  ],
+  "contact": {
+    "email": "contact@devflowstudio.com",
+    "phone": "+1 (555) 019-2834",
+    "address": "100 Innovation Way, Suite 400, Tech City",
+    "hours": "Mon - Fri, 9:00 AM - 5:00 PM"
+  },
+  "footerText": "© 2026 DevFlow Studio. All rights reserved. Built with Vite, React, and Tailwind CSS."
+}
