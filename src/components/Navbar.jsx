@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -25,10 +25,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 border-b animate-navbar-fade ${
         scrolled
           ? 'bg-white/95 shadow-sm py-3 border-slate-200/80 backdrop-blur-md'
-          : 'bg-white/85 shadow-none py-5 border-transparent backdrop-blur-sm'
+          : 'bg-transparent shadow-none py-5 border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +49,7 @@ export default function Navbar() {
                 key={idx}
                 to={link.path}
                 className={({ isActive }) =>
-                  `text-sm font-medium transition-colors duration-300 nav-link-underline py-1 ${
+                  `text-sm font-medium nav-link-item nav-link-underline py-1 ${
                     isActive
                       ? 'text-indigo-600 nav-link-active'
                       : 'text-slate-600 hover:text-indigo-600'

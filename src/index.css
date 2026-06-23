@@ -13,9 +13,15 @@
   }
 }
 
-/* Custom underline slide transition animation for navigation links */
-.nav-link-underline {
+/* Premium micro-interactions for navigation links */
+.nav-link-item {
+  display: inline-block;
   position: relative;
+  transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.nav-link-item:hover {
+  transform: translateY(-2px);
 }
 
 .nav-link-underline::after {
@@ -27,13 +33,12 @@
   bottom: -4px;
   left: 0;
   background-color: currentColor;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
+  transform-origin: center;
+  transition: transform 0.25s ease-in-out;
 }
 
 .nav-link-underline:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 /* Active underline style */
@@ -46,4 +51,22 @@
   bottom: -4px;
   left: 0;
   background-color: currentColor;
+  transform-origin: center;
 }
+
+/* Micro-interaction: Subtle hardware-accelerated fade-in on mount */
+@keyframes navbarFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-navbar-fade {
+  animation: navbarFadeIn 0.45s ease-out forwards;
+}
+
